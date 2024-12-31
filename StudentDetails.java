@@ -49,8 +49,8 @@ public class StudentDetails {
     
         // Get the class details of the student
         System.out.println("Enter the class for the student:");
-        String hafazan = scanner.nextLine();
-        studentClass.add(hafazan); // Add student class
+        String Class = scanner.nextLine();
+        studentClass.add(Class); // Add student class
     
         // Generate a unique ID using the counter
         String newStudentID = "S" + studentIDCounter;
@@ -79,10 +79,10 @@ public class StudentDetails {
     
                 // Check if the student index is valid
                 if (studentIndex >= 0 && studentIndex < studentNames.size()) {
-                    System.out.print("Enter the new Hafazan detail for " + studentNames.get(studentIndex) + ": ");
-                    String newHafazan = scanner.nextLine();
-                    studentClass.set(studentIndex, newHafazan); // Update the Hafazan detail
-                    System.out.println("Hafazan detail updated successfully!");
+                    System.out.print("Enter the new Class detail for " + studentNames.get(studentIndex) + ": ");
+                    String newClass = scanner.nextLine();
+                    studentClass.set(studentIndex, newClass); // Update the Hafazan detail
+                    System.out.println("Class detail updated successfully!");
                     validInput = true; // Input is valid, exit the loop
                 } else {
                     System.out.println("Invalid student number! Please try again.");
