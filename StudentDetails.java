@@ -80,10 +80,10 @@ public class StudentDetails {
 
                 // Check if the student index is valid
                 if (studentIndex >= 0 && studentIndex < studentNames.size()) {
-                    System.out.print("Enter the new Hafazan detail for " + studentNames.get(studentIndex) + ": ");
+                    System.out.print("Enter the new class for " + studentNames.get(studentIndex) + ": ");
                     String newHafazan = scanner.nextLine();
                     studentClass.set(studentIndex, newHafazan); // Update the Hafazan detail
-                    System.out.println("Hafazan detail updated successfully!");
+                    System.out.println("Student detail updated successfully!");
                     validInput = true; // Input is valid, exit the loop
                 } else {
                     System.out.println("Invalid student number! Please try again.");
@@ -115,7 +115,7 @@ public class StudentDetails {
                     studentNames.remove(studentIndex); // Remove the student name
                     studentClass.remove(studentIndex); // Remove the student class
                     studentID.remove(studentIndex); // Remove the student ID
-                    System.out.println("Student and corresponding Hafazan detail deleted successfully!");
+                    System.out.println("Student and corresponding class deleted successfully!");
 
                     // Save the updated data to the file
                     saveUserData();
